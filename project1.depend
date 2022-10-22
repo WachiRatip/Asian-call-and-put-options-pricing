@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1646076705 source:h:\project1\asianoptions.cpp
+	<iostream>
+	<cmath>
+	"BinModel.h"
+	"AvgPrices.h"
+
+1646057966 h:\project1\binmodel.h
+
+1646057959 h:\project1\avgprices.h
+
+1646058096 source:h:\project1\avgprices.cpp
+	<iostream>
+	<cmath>
+	"BinModel.h"
+
+1646058049 source:h:\project1\binmodel.cpp
+	<iostream>
+
+1646064986 source:h:\project1\main.cpp
+	<iostream>
+	<cmath>
+	"BinModel.h"
+	"AvgPrices.h"
+	"AsianOptions.h"
+
+1646058007 h:\project1\asianoptions.h
+
+1646064819 source:h:\project1\test.cpp
+	<iostream>
+	<cmath>
+	"BinModel.h"
+	"AvgPrices.h"
+	"AsianOptions.h"
+
