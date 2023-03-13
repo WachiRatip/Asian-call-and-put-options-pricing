@@ -36,8 +36,8 @@ double Price(double S0, double U, double D,
                 double (*AvgType)(double* Prices, int N))
 {
     //Mutable path and prices.
-    int path[N];
-    double prices[N];
+    int* path = new int[N];
+    double* prices = new double[N];
 
     //The placeholder for the expected payoff.
     double Price=0;
@@ -62,6 +62,10 @@ double Price(double S0, double U, double D,
         //SUM(p_x*payoff_x)
         Price += p*payoff;
     }
+
+    //Deallocate the memory
+    delete[] path;
+    delete[] prices;
 
     //Return the discounted expected payoff (the Asian option price)
     //which is E(payoff)/(1+R)^{N}
