@@ -16,7 +16,7 @@ int GetInputData(int& N, double& K)
     cout << endl;
 
     //check if N and K is greater than 0;
-    if (N<=0 || N<=0)
+    if (N<=0 || K<=0)
     {
         cout << "The number of time steps and the strike price"
              << "must greater than 0"
